@@ -12,7 +12,9 @@ namespace Client {
             _systems = new EcsSystems (_world);
             _systems
                 .ConvertScene()
-                .Add(new EcsInitSystem())
+                .Add(new EcsCounterSystem())
+                .Add(new EcsMoveSystem())
+                .Add(new EcsSpawnSystem())
                 
                 // register additional worlds here, for example:
                 // .AddWorld (new EcsWorld (), "events")

@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Client 
 {
-    public struct EcsComponent
+    [Serializable]
+    public struct EcsCounterComponent
     {
         public float Counter;
-        public Transform Anchor;
     }
 }
